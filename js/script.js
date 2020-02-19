@@ -1,4 +1,4 @@
-function maketiles(){
+function makeTiles(){
     let i = document.getElementByClassName("tile").length;
     let divs = document.createElement("DIV"); 
     divs.setAttribute("class","tile");
