@@ -1,24 +1,35 @@
 let divs = document.createElement("DIV");
+let l = 3;                                  //l ir speles laukuma malas garums (blokos)
+let row;
 
-function startGame(){
-    console.log("iet");
+function startGame(){                       // izsauc šo, kad uzspiež pogu start
     divs.setAttribute("class","tile");
-    
-    let l = 3;
-    for (let i = 0; i < l*l; i++) {
-        makeTile();
+    for (let i = 0; i < l; i++) {
+        makeRow();
     }
+    
+//    while (document.getElementById("forma").hasChildNodes()) {
+//        console.log("iet");
+//        document.getElementById("forma").removeChild(document.getElementById("forma").firstChild);
+//    }
     
     document.getElementById("forma").appendChild(divs);
 }
 
-function makeTile(){
+function makeRow(){                         // izveido jaunu rindu
+    row = document.createElement("DIV");
+    for(let i = 0; i<l ;i++){
+        makeTile();
+    }
+    divs.appendChild(row);
+}
+
+function makeTile(){                        // izveido jaunu bloku (tile)
     let tile = document.createElement("DIV");
-    tile.style = "text-align: center";
+    tile.style = "text-align: center; display: inline-block; padding: 10px; background-color: #f4511e; border-style: solid; border-color: black; border-width: 2px;";
     tile.innerHTML = "tile";
-    tile.type = "button";
     tile.onclick=()=>{
-        tile.remove();
+        tile.innerHTML = " ";
     };
-    divs.appendChild(tile);
+    row.appendChild(tile);
 }
