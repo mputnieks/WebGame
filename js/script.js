@@ -25,12 +25,12 @@ function makeRow(){                         // izveido jaunu rindu
 }
 
 function makeTile(){                        // izveido jaunu bloku (tile)
-    var tile = document.createElement("img");
-    img.src = "images/f1.jpg";
+    let tile = document.createElement("img");
+    tile.src = "images/f1.jpg";
     //tile.style = "text-align: center; display: inline-block; padding: 10px; background-color: #f4511e; border-style: solid; border-color: black; border-width: 2px;";
     //tile.innerHTML = "tile";
     tile.onclick=()=>{
-        img.src='images/f1a.jpg';
+        tile.src='images/f1a.jpg';
         //tile.innerHTML = " ";
     };
     row.appendChild(tile);
