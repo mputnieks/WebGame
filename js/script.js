@@ -31,6 +31,8 @@ function makeTile(){                        // izveido jaunu bloku (tile)
     tile.innerHTML = " ";
     tile.onclick=()=>{
         tile.src="images/f1.jpg";
+        tile.width = 50;
+        tile.height = 50;
         //tile.innerHTML = " ";
     };
     row.appendChild(tile);
