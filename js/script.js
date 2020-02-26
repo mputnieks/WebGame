@@ -18,7 +18,7 @@ function startGame(){                       // izsauc šo, kad uzspiež pogu sta
 }
 
 function makeRow(){                         // izveido jaunu rindu
-    row = document.createElement("DIV");
+    row = document.createElement("div");
     for(let i = 0; i<l ;i++){
         makeTile();
     }
