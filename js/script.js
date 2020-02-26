@@ -30,7 +30,7 @@ function makeTile(){                        // izveido jaunu bloku (tile)
     //tile.style = "text-align: center; display: inline-block; padding: 10px; background-color: #f4511e; border-style: solid; border-color: black; border-width: 2px;";
     //tile.innerHTML = "tile";
     tile.onclick=()=>{
-        tile.src='images/f1a.jpg';
+        tile.src="images/f1a.jpg";
         //tile.innerHTML = " ";
     };
     row.appendChild(tile);
