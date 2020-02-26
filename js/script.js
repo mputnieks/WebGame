@@ -27,12 +27,12 @@ function makeRow(){                         // izveido jaunu rindu
 function makeTile(){                        // izveido jaunu bloku (tile)
     let tile = document.createElement("img");
     //tile.src = "images/f1.jpg"; 
-    tile.style = "text-align: center; display: inline-block; padding: 0px; background-color: #f4511e; border-style: solid; border-color: black; border-width: 2px;";
+    tile.style = "text-align: center; display: inline-block; padding: 50px; background-color: #f4511e; border-style: solid; border-color: black; border-width: 2px;";
     tile.innerHTML = " ";
     tile.onclick=()=>{
         tile.src="images/f1.jpg";
-        tile.width = 100;
-        tile.height = 100;
+        tile.width = 50;
+        tile.height = 50;
         //tile.innerHTML = " ";
     };
     row.appendChild(tile);
