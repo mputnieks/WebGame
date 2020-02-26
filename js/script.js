@@ -17,7 +17,7 @@ function startGame(){                       // izsauc šo, kad uzspiež pogu sta
 }
 
 function makeRow(){                         // izveido jaunu rindu
-    row = document.createElement("DIV");
+    row = document.createElement("img");
     for(let i = 0; i<l ;i++){
         makeTile();
     }
@@ -25,8 +25,8 @@ function makeRow(){                         // izveido jaunu rindu
 }
 
 function makeTile(){                        // izveido jaunu bloku (tile)
-    let tile = document.createElement("img");
-    img.src="images/f1.jpg";
+    var tile = document.createElement("img");
+    img.src = "images/f1.jpg";
     //tile.style = "text-align: center; display: inline-block; padding: 10px; background-color: #f4511e; border-style: solid; border-color: black; border-width: 2px;";
     //tile.innerHTML = "tile";
     tile.onclick=()=>{
