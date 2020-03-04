@@ -5,7 +5,7 @@ let row;
 function startGame(){                       // izsauc šo, kad uzspiež pogu start
     l = document.getElementById("quantity").value;
     divs = document.createElement("DIV");
-    if(l>=1 && l<=10){
+    if(l>1 && l<=10){
         while (document.getElementById("forma").hasChildNodes()) {
             console.log("iet");
             document.getElementById("forma").removeChild(document.getElementById("forma").firstChild);
@@ -18,13 +18,12 @@ function startGame(){                       // izsauc šo, kad uzspiež pogu sta
         document.getElementById("forma").appendChild(divs);
     }
     else{
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <div class="title">
-                ahoi
-                </div>
-            </div>
-        </div>
+        while (document.getElementById("forma").hasChildNodes()) {
+            console.log("iet");
+            document.getElementById("forma").removeChild(document.getElementById("forma").firstChild);
+        }
+        divs.innerHTML = "Ievadi skaitli no divi līdz desmit!"
+        document.getElementById("forma").appendChild(divs);
     }
 }
 
