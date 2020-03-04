@@ -22,7 +22,8 @@ function startGame(){                       // izsauc šo, kad uzspiež pogu sta
             console.log("iet");
             document.getElementById("forma").removeChild(document.getElementById("forma").firstChild);
         }
-        divs.innerHTML = "Ievadi skaitli no divi līdz desmit!"
+        divs.innerHTML = "Ievadi skaitli no divi līdz desmit!";
+        divs.style = "color: red; font-size: 20px;";
         document.getElementById("forma").appendChild(divs);
     }
 }
