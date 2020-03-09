@@ -1,9 +1,9 @@
 let divs;
-let l = 3;                                  //l ir speles laukuma malas garums (blokos)
+let l = 4;                                  //l ir speles laukuma malas garums (blokos)
 let row;
-let m1 = [];                                     //Masivs 1 (Galvenais)
-let m2 = ["f1","f2","f3","f4","f5","f6"];        //Masivs 2
-let m3 = [1,2,3,4,5,6];                          //Masivs 3
+let m1 = [];                                     			//Masivs 1 (Galvenais)
+let m2 = [1,2,3];        										//Masivs 2
+let m3 = [];                          						//Masivs 3
 
 function startGame(){                       // izsauc šo, kad uzspiež pogu start
     l = document.getElementById("quantity").value;
@@ -53,16 +53,25 @@ function onClick (tile){
     tile.src = "images/f1.jpg";
 }
 
+
 function rand (){
-    for(let i=0; i<l; i++){
+	for(let i=0; i<(l*l)/2; i++){
+		m2.push(i+3);
+	}
+	for(let i=0; i<(l*l)/2; i++){
+		m3.push(getBaseLog(Math.E, i+3));
+	}
+    for(let i=0; i<(l*l)/2; i++){
         m1.push(m2[i]);
     }
-    for(let i=0; i<l; i++){
+    for(let i=0; i<(l*l)/2; i++){
         m1.push(m3[i]);
     }
     m1 = shuffle(m1);
     for(let i=0; i<m1.length; i++){
         console.log(m1[i]);
+		//console.log(getBaseLog(Math.E, i)+"garums m1");
+		//console.log(i+"garums l");
     }
 }
 
@@ -75,4 +84,8 @@ function shuffle(a) {
         a[j] = x;
     }
     return a;
+}
+
+function getBaseLog(x, y) {
+  return Math.log(y) / Math.log(x);
 }

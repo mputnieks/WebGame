@@ -1,6 +1,6 @@
 div.a {
 	text-align: center;
-	font-size: 30;
+	font-size: 50;
 	width: 100%;
 	padding: 50px;	
 	background-color: lightblue;
@@ -8,9 +8,7 @@ div.a {
 
 div.b{
 	width: 100%;
+	font-size: 25;
 }
 
-h1{
-	
-}
 
