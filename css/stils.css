@@ -11,4 +11,12 @@ div.b{
 	font-size: 25;
 }
 
+.tile_style{
+    text-align: center; display: inline-block; width:200px; height:200px; border-style: solid; border-color: black; border-width: 2px;
+}
+
+.uzvara {
+    text-align: center; z-index: 100; right:0px; left:0px; color: red;
+}
+
 
