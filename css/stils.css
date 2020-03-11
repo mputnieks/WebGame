@@ -1,17 +1,18 @@
 
 div.a {
 	text-align: center;
-	font-size: 50;
+	font-size: 50px;
 	width: 100%;
-	padding: 50px;	
+	padding: 50px;
 	background-color: lightblue;
 }
 
 div.b{
 	width: 100%;
-	font-size: 25px;
+	font-size: 20px;
         font-family: sans-serif;
         padding-left: 30px;
+        overflow: auto;
 }
 
 .tile_style{
