@@ -1,3 +1,4 @@
+
 div.a {
 	text-align: center;
 	font-size: 50;
@@ -8,15 +9,22 @@ div.a {
 
 div.b{
 	width: 100%;
-	font-size: 25;
+	font-size: 25px;
+        font-family: sans-serif;
+        padding-left: 30px;
 }
 
 .tile_style{
-    text-align: center; display: inline-block; width:200px; height:200px; border-style: solid; border-color: black; border-width: 2px;
+    text-align: center; display: inline-block; width:200px; height:200px; border-style: solid; border-color: black; border-width: 2px; background-color: lightgrey; vertical-align:sub;
+}
+
+.p_style {
+    position:relative;
+    top: 40px;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .uzvara {
-    text-align: center; z-index: 100; right:0px; left:0px; color: red;
+    text-align: center; z-index: 100; position:absolute; top:50%; left:50%; color: red; font-size: 100px; font-family: sans-serif;
 }
-
-
